@@ -1,5 +1,5 @@
 //Given two strings, write a method to decide if one is a permutation of the other.
-// Note:- A String is called permutation of other if they both have same charcaters but order cab be different.
+// Note:- A String is called permutation of other if they both have same charcaters but order can be different.
 // Idea is that we will find the count of each character in first string and store it in object.
 // while iterating through second string if the character is not present in the object then retuen false else decrease count by 1.
 // finally if there is any characters in object whose value is not equal to 0 then return false.
@@ -34,4 +34,4 @@ const checkPermutation = (str1, str2) => {
   return true;
 };
 
-console.log(checkPermutation("abcd", "abcd"));
+console.log(checkPermutation("abcd", "cdb"));

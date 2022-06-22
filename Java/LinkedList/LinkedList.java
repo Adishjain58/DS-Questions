@@ -12,10 +12,6 @@ public class LinkedList<T> {
         this.length = 0;
     }
 
-    public Node<T> getNewNode(T data) {
-        return new Node<>(data);
-    }
-
     public void append(T data) {
         Node<T> newNode = new Node<>(data);
         this.tail.next = newNode;
